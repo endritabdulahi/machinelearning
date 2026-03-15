@@ -1,34 +1,20 @@
-# HMM ile İzole Kelime Tanıma Sistemi
+# Machine Learning Assignments Repository
 
-## Problem
-Bu projede Hidden Markov Model (HMM) kullanarak basit bir konuşma tanıma sistemi simüle edilmiştir. 
-Sistem iki kelimeyi ayırt eder: EV ve OKUL.
+This repository contains coursework for the **YZM212 – Machine Learning** class.
 
-## Veri
-Gerçek ses verisi yerine temsilî gözlem dizileri kullanılmıştır.
 
-High = 0  
-Low = 1
+## Homework Descriptions
 
-## Yöntem
-Her kelime için ayrı bir Hidden Markov Model tanımlanmıştır.
+### Odev 1
 
-Model parametreleri:
-- Geçiş olasılıkları
-- Emisyon olasılıkları
-- Başlangıç olasılıkları
+Hidden Markov Model (HMM) based isolated word recognition system implementation and analysis.
 
-Yeni gelen gözlem dizisi her model için log-likelihood hesaplanarak sınıflandırılır.
+### Odev 2
 
-## Sonuç
-Test gözlem dizisinin hangi modele daha yüksek olasılık verdiğine göre kelime tahmini yapılır.
+Traffic modeling using the Poisson distribution and **Maximum Likelihood Estimation (MLE)** to estimate the parameter λ from observed traffic data.
 
-## Kullanım
+## Student
 
-Kurulum:
-
-pip install -r requirements.txt
-
-Çalıştırma:
-
-python src/classifier.py
+Name: Endrit Abduahi
+Course: **YZM212 – Machine Learning**
+University: Ankara University
