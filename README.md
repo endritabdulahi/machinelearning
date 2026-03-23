@@ -13,6 +13,10 @@ Hidden Markov Model (HMM) based isolated word recognition system implementation 
 
 Traffic modeling using the Poisson distribution and **Maximum Likelihood Estimation (MLE)** to estimate the parameter λ from observed traffic data.
 
+### Odev 3
+
+This assignment explores matrix operations and eigenvalues/eigenvectors in machine learning by combining theory with practical computation and comparison using NumPy.
+
 ## Student
 
 Name: Endrit Abduahi . 
