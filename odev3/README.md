@@ -97,8 +97,20 @@ Manual calculation helps understanding the concept, while libraries like NumPy m
 
 ## References
 
-* Machine Learning Mastery – Introduction to Matrices
-* Machine Learning Mastery – Eigenvalues and Eigenvectors
-* NumPy Documentation
-* NumPy GitHub Repository
-* LucasBN Eigenvalues Repository
+## References
+
+* Introduction to Matrices for Machine Learning:
+  https://machinelearningmastery.com/introduction-matrices-machine-learning/
+
+* Introduction to Eigenvalues and Eigenvectors:
+  https://machinelearningmastery.com/introduction-to-eigendecomposition-eigenvalues-and-eigenvectors/
+
+* NumPy `eig` Documentation:
+  https://numpy.org/doc/2.1/reference/generated/numpy.linalg.eig.html
+
+* NumPy Source Code:
+  https://github.com/numpy/numpy/tree/main/numpy/linalg
+
+* Eigenvalues Implementation (Reference Repository):
+  https://github.com/LucasBN/Eigenvalues-and-Eigenvectors
+
