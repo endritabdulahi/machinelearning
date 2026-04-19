@@ -1,1 +1,48 @@
+# Machine Learning HW4 - Bayesian Brightness Analysis
 
+## Project summary
+
+The goal is to estimate the true brightness `mu` and observational uncertainty `sigma` of a celestial object using Bayesian inference and MCMC with the `emcee` library.
+
+The script:
+1. Generates noisy observations
+2. Defines log-likelihood, log-prior, and log-posterior functions
+3. Runs MCMC sampling with `emcee`
+4. Produces posterior summaries
+5. Saves a corner plot and a trace plot
+6. Compares the baseline result with:
+   - a very narrow prior
+   - a reduced dataset (`n_obs = 5`)
+
+## Baseline results
+
+Using the generated dataset with `seed = 42`:
+
+- Estimated `mu` median: **147.7209**
+- Estimated `sigma` median: **9.4828**
+- `mu` 16th-84th percentile interval: **[146.4606, 149.0299]**
+- `sigma` 16th-84th percentile interval: **[8.5846, 10.6226]**
+
+## How to run
+
+```bash
+pip install -r requirements.txt
+python main.py
+```
+
+## Output files
+
+After running the script, the `outputs/` folder contains:
+
+- `observations.csv`
+- `trace_baseline.png`
+- `corner_baseline.png`
+- `corner_n_obs_5.png`
+- `corner_narrow_prior.png`
+
+
+## Short interpretation
+
+- The baseline model estimates `sigma` very accurately and estimates `mu` reasonably close to the true value.
+- When only 5 observations are used, posterior uncertainty becomes much wider.
+- When an overly restrictive prior is used for `mu`, the posterior is pulled strongly toward the prior and away from the true value.
